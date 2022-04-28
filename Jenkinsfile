@@ -12,12 +12,12 @@ pipeline{
     stages{
         stage('Building'){
             steps{
-               sh 'npm run build'
+               bat "npm i"
+               bat 'npm run build'
             }
         }
         stage('Testing'){
             steps{
-                bat "npm i"
                 bat "npx cypress run --browser ${BROWSER} --spec ${SPEC}"
             }
         }
