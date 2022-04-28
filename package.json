@@ -5,7 +5,7 @@
   "license": "MIT",
   "scripts": {
     "ng": "ng",
-    "cypress:open": "cypress open",
+   "cypress:open": "$(npm bin)/cypress open",
     "cypress:default": "cypress run --spec Angular-jenkins-cypress-main/cypress/integration/*.spec.js"
     "start": "ng serve",
     "build": "ng build",
